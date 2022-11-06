@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW3</title>
+  </head>
+  <body>
+    <script>
+      const age = prompt("Сколько тебе лет?");
+      if (isNaN(age) || age === "") {
+        alert("Введите возраст цифрами");
+      } else if (age % 10 >= 5 && age % 10 <= 20) {
+        alert(`Тебе ${age} лет`);
+      } else {
+        if (age % 10 === 1) {
+          alert(`Тебе ${age} год`);
+        } else if (age % 10 >= 2 && age % 10 <= 4) {
+          alert(`Тебе ${age} года`);
+        } else {
+          alert(`Тебе ${age} лет`);
+        }
+      }
+    </script>
+  </body>
+</html>
